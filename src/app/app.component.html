@@ -1,0 +1,36 @@
+<!-- <div class="container bc-g" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start stretch" fxLayoutGap="10px" >
+    <div class="box" fxLayoutAlign="center center" fxFlex="0 1 calc(50% - 10px)" *ngFor="let item of [1,2,3,4,5,6,7,8]">
+        <span >{{item}}</span>
+    </div>
+</div> -->
+<mat-card class="p-0-i">
+    <div fxLayout="row wrap" class="p-x-20 p-y-10" fxLayoutAlign="space-between stretch">
+        <h2 fxFlex="100">Title</h2>
+        <div *ngFor="let item of config1" [fxFlex]="item.row" [fxFlex.lt-md]="item.column" class="box" fxLayout="column" fxLayoutAlign="center center">
+            <p class="box-content-title">{{item.title}}</p>
+            <hr style="width: 100%">
+            <p class="box-content">{{item.content}}</p>
+        </div>
+        <div *ngFor="let item of config" [fxFlex]="item.row" [fxFlex.lt-md]="item.column" class="box p-x-20" fxLayout="column" fxLayoutAlign="center center">
+            <div class="full-w">
+                <ngu-carousel [inputs]="carouselTile" (initData)="initDataFn($event)" >
+                    <ngu-tile NguCarouselItem *ngFor="let Tile of carouselTileItems">
+                        <h1>{{Tile + 1}}</h1>
+                    </ngu-tile>
+                    <button mat-fab NguCarouselPrev color="primary" class="leftRs">
+                        <mat-icon class="carousel-icon">chevron_left</mat-icon>
+                    </button>
+                    <button mat-fab NguCarouselNext color="primary" class="rightRs">
+                        <mat-icon class="carousel-icon">chevron_right</mat-icon>
+                    </button>
+                </ngu-carousel>
+            </div>
+            <div class="full-w m-b-20">
+                <mat-progress-bar [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue">
+                </mat-progress-bar>
+            </div>
+        </div>
+    </div> 
+</mat-card>
+
+<br>

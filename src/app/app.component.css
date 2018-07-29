@@ -1,0 +1,90 @@
+.box{
+    min-height: 50px;
+    border-radius: 5px;
+    /* background-color: rgb(58, 143, 255); */
+    /* color: whitesmoke; */
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+.bc-g{
+    background-color: gray;
+}
+
+.container .box:last-child{
+    /* margin-right: 10px; */
+}
+
+
+.box-content-title{
+    padding: 0px 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.box-content{
+    padding: 0px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+    /* font-size: 1.5em; */
+}
+
+hr{
+    margin: 0px;
+}
+
+
+/* style carousel */
+h1{
+    min-height: 150px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 150px;
+  }
+  .leftRs {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 999px;
+      left: 0;
+  }
+
+  .rightRs {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      /* border-radius: 100%;
+      border-style: none;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+
+      box-shadow: 0 3px 7px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+      transition: all .2s ease-in-out;
+      cursor: pointer; */
+  }
+
+  .carousel-icon{
+      font-size: 1.5em;
+      font-weight: 900;
+  }
+
+  .rightRs:hover {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 5px 11px 0 rgba(0,0,0,.15);
+    }
+
+  .leftRs:focus, .rightRs:focus {
+    outline:none;
+}
+
